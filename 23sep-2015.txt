@@ -1,0 +1,182 @@
+====================
+     09-23-2015
+====================
+
+
+   * frameworks/base/
+925b5ce Status bar: Animated greeting label preview.
+5d5971c Fix the layout of the 5 navrings
+2b0b0b4 SysUI: Clean up objects when recreating statusbar
+5856163 Frameworks: Lockscreen blur & see through (1/2)
+4e060c3 QS Brightness slider and memory bar color 2/2
+bbdb57c Status bar header: Add multiple single click and long click intents.
+f38e766 SystemUI: don't recreate zen controller, handler thread
+8b27209 SystemUi: Don't show cellular data tile on secondary users.
+3eec3dd SystemUI: set fingerprint auth properly after occluded change
+c2ceadc SystemUI: fix crypt keeper race condition
+89b380a Status bar: Greeting font size (1/2)
+
+   * packages/apps/Settings/
+8842d28 QS Brightness slider colors catergory.
+39ee7de Lockscreen see-through & blur (2/2)
+93de3b8 QS Brightness slider and memory bar color 1/2
+5deea4c Status bar: Greeting font size (2/2)
+
+   * vendor/cmsdk/
+e1cce69 packages: Remove CMResolver
+
+   * vendor/fusion/
+2466983 cm: Clean up cgroups even more!
+8420b06 cm: Clean up cgroups
+782e272 cm: Fix a few denials
+52229f0 cm: Remove xattr option from bfqio cgroup
+0656ef3 cm: Update shared init.rc
+
+====================
+     09-22-2015
+====================
+
+
+   * frameworks/base/
+9fd65f7 Status bar: Greeting, (1/2):
+
+   * frameworks/native/
+b653297 Set explicit ioprio where required
+7e9533e input: Adjust priority
+
+   * packages/apps/Settings/
+906aa40 Status bar: Greeting, (2/2):
+
+   * system/core/
+daa1919 cutils: Remove ioprio magic
+475d911 cutils: Clean up ioprio grouping
+
+====================
+     09-21-2015
+====================
+
+
+   * frameworks/base/
+d8d20ce Fix gesture lockscreen bad .9'pngs
+eec2aa4 IMS: revert: ims: More backwards-compatibility stuff
+3f018d0 Add call log types definition for Ims call.
+1694b3f Ims: Add support to query Packet Count and Packet Error Count
+5e9c4cf Add support for wifi calling settings
+6bd6749 IMS: During CS retry, propagate reason code to UI
+c02d94c IMS: add ImsConfig api to get volte provisioned value.
+dd0f4d3 IMS: change getMasterValue to getProvisionedValue.
+3b1cb8d IMS: Add interface to query call forward for specific service class.
+fdcff7c Revert "ims: Bring in line with current release"
+389aff6 Revert "Reduce risk of memory corruption due to finalization."
+79323b0 SystemUI: screenshot: set a boost hint when taking a screenshot
+74ab62f SystemUI: statusbar: some smaller cleanups and NPE fixes
+080b13c SystemUI: statusbar: cache and reuse power manager
+17414ca prevent unnecessary warning logs caused by View.toString()
+7f79240 StatusBarHeader: Header settings button switch (1/2)
+a32927f QS Brightness Slider: Custom color for the checkbox on state.
+bf3a803 Disable Lockscreen Media Art [1/2] * toggle to choose whether or not to show album art/media art on lockscreen
+fed04a7 QS: Update visibility of items in Bluetooth/WiFi tiles
+7eb4a8f Themes: Set composed icon scale to 1f default
+cdedc43 WeatherTemp: Hide when reached a custom number of notification icons (1/2)
+
+   * frameworks/opt/net/ims/
+86fa0ad IMS CallGroup Cleanup for 4-Way Conference
+0642b0a Ims: Enable IMS feature in multi-sim
+6093477 Ims: Add support to query Packet Count and Packet Error Count
+85abbea Add support for wifi calling settings
+54e70b2 Add UT interface to query call forward setting for service class.
+e853391 IMS: During CS retry, propagate reason code to UI
+2e24aeb Revert "ims: Bring in line with current release"
+
+   * frameworks/opt/telephony/
+5292334 IMS: During CS retry, propagate reason code to UI
+13ef943 Revert "IMS phone instantiation: add polling on base phone creation"
+b0b6e86 IMS: Fix CF icon issue when enable from UI.
+dbae881 IMS: Fix ConcurrentModification exception during SRVCC.
+d8ad7fc Fix the issue that Volte call is not cleaned up properly from telephony framework when call failure is notified through dial command response.
+4e1c680 IMS: Ims Registration error codes support
+bd80976 IMS: add the api to get IMS registration information.
+14fe482 IMS: Add support for sending ADD_PARTICIPANTS response to apps.
+a4eee97 Notify ServiceState for IMS registration
+4693845 IMS: Turn on radio during wifi scenario
+c907466 Ims: Enable IMS feature in multi-sim
+6278b77 Revert "telephony: Bring IMS in line with current relese"
+
+   * packages/apps/InCallUI/
+b3fee81 Material Dark theme: Fix text visibility
+
+   * packages/apps/Settings/
+69ea2d1 StatusBarHeader: Header settings button switch (2/2)
+a09a5ed Disable lockscreen Media art 2/2
+9d09628 WeatherTemp: Hide when reached a custom number of notification icons (2/2)
+
+   * packages/services/Telecomm/
+e3ffc8b Save Ims related call log after call disconnected.
+
+   * packages/services/Telephony/
+054bec4 IMS: Allow dial with empty URI List.
+8cc58ea IMS: Fix crash during midcall disabled multicall SRVCC.
+7851946 IMS: Allow add participant with normal IMS call.
+11320d7 IMS: Turn on radio during wifi scenario
+09c8e33 IMS: Update conferenceHostConnection state for a conference call
+548c126 Revert "Ims: Update conferenceHostConnection state for a conference call"
+a06533e MSIM IMS: convert to phone ID based selection.
+a913189 IMS Conference notifyConferenceStarted API
+70e99d0 Add support for Wifi calling settings UI
+80e01ed Ims: UI changes for Packet Count and Packet Error Count
+
+   * system/core/
+1b1428c cutils: Fix display ioprio
+6a43a81 cutils: Fix copypasta in ioprio code
+
+====================
+     09-20-2015
+====================
+
+
+   * device/samsung/klte-common/
+5b33342 klte-common: Set io scheduler using sys.io.scheduler prop
+5886f7e klte-common: Add radish binary
+cfb74e9 build ebtables and ethertypes
+d47d42e liblights: fix warnings
+0c2cd46 Sepolicy updates
+177ce1d Revert "Sepolicy: Remove policy for LiveDisplay, moved to vendor."
+
+   * frameworks/base/
+b1e7459 Default to Resolver Theme
+72c6d3d SettingsProvider: move Profile picker activity (1/2)
+ec4abe0 SystemUI: add missing super viewgroup method calls
+74d8221 Fix race condition in panel expansion handling.
+bbeb60e base: fix window bounds for left hand navigationbar
+291efe6 framework: add string for wifi subscription change notification
+
+   * frameworks/opt/net/wifi/
+28ac898 wifi: disable access point on subscription change
+8414b46 Merge branch 'LA.BF64.1.2.1_rb2.33' of git://codeaurora.org/platform/frameworks/opt/net/wifi into cm-12.1
+
+   * hardware/qcom/display-caf/msm8916/
+c115bfd qdutils: Fix misleading log message
+
+   * vendor/fusion/
+ecf9f03 Removes Empty String For Resolver
+eaf3a16 cm: Set IOPS mode for CFQ and BFQ automatically
+c6c41f4 vendor/cm: Remove custom resolver from OSS builds.
+
+====================
+     09-19-2015
+====================
+
+
+   * frameworks/base/
+4942a50 Status bar expanded/Volume dialog/Heads up: Improvements, part 4:
+47cbdfb FusionLogo: Hide when reached a custom number of notification icons (1/2)
+
+   * hardware/qcom/display-caf/msm8960/
+d9816c5 display: Set thread priority using cutils
+
+   * packages/apps/Profiles/
+aa39fbc Profiles: add profile picker Activity (2/2)
+
+   * packages/apps/Settings/
+d12bdb8 FusionLogo: Hide when reached a custom number of notification icons (2/2)
+
