@@ -1,0 +1,314 @@
+====================
+     10-01-2015
+====================
+
+
+   * frameworks/av/
+f963b5d libstagefright : fix the bug of wrong value setting for slice-height
+
+   * frameworks/base/
+bc95272 services: core: server: NetworkManagementService: Mute getNetworkStatsSummary logs
+6983f50 Revert "AdBlocker 2/3"
+db75e5f NVIDIA Shield Controller support [2/2]
+fafa454 framework: add "Turn wifi off" string
+5c29116 Battery: Add fast charging UI support [3/3]
+e2f487c Header camera button 1/2
+834f41d LEDs Brightness [2/2]: Lights notifications brightness support
+c478fe4 Revert "Illumination Bar [3/3]: Multiple LEDs and brightness support"
+
+   * frameworks/native/
+d9b3cdb Native: Add fast charging UI support [1/3]
+
+   * frameworks/opt/net/wifi/
+cedb8fc NVIDIA Shield Controller support [1/2]
+f2343db wifi: Allow building without Wifi HAL
+e579c9f Wifi: add "turn wifi off" action to open network notification
+
+   * hardware/libhardware/
+17a2514 Revert "Illumination Bar [1/3]: Multiple LEDs and brightness support"
+
+   * packages/apps/Dialer/
+aabcf37 Specify different colors for answered incoming call and outgoing call icons.
+d97e934 Automatic translation import
+1e6a127 Call recording encoder/format choice 1/3
+79e3c8f Revert "Call recording encoder/format choice 1/3"
+
+   * packages/apps/Settings/
+a0d51fe Fix QSPanel/Bar settings logic.
+09a8566 Settings: Add prebuilt AdAway (1/2)
+f07ad3a Revert "AdBlocker 1/3"
+260c818 Header camera button 2/2
+9872b23 Settings: Always enable the per-app pulse light settings
+fbd54b2 LEDs Brightness [1/2]: Lights notifications brightness support
+8ee186b Revert "Illumination Bar [2/3]: Multiple LEDs and brightness support"
+
+   * packages/apps/SoundRecorder/
+9973e42 SoundRecorder: only primary storage volumes are writeable
+
+   * packages/apps/Trebuchet/
+b5f1c45 Trebuchet : Ensure search bar doesn't show in hidden
+1f9ba38 App Drawer: fix insets on paddingTop
+
+   * packages/providers/ThemesProvider/
+3a599d2 Use correct DialtactsActivity for DialerNext
+
+   * packages/services/Telecomm/
+33af938 Telecomm : Allow multiple default dialers
+
+   * packages/services/Telephony/
+3adf163 Telephony : Allow multiple default dialers
+128f1e4 Call recording encoder/format choice 2/3
+ed09b00 Revert "Call recording encoder/format choice 2/3"
+
+   * prebuilts/cmsdk/
+090c6d2 cmsdk: Update current for API level 2 release.
+11ccd84 cmsdk: Update api text for api level 2 and permissions for it.
+
+   * system/core/
+b608439 fastboot: format f2fs partition instead of just erase
+f258a5c Added proper support to NVIDIA Shield Tablet Console Mode
+0eefb41 healthd: Add fast charging UI support [2/3]
+
+   * vendor/cmsdk/
+4fd7cf5 cmsdk: Update API text for constants changes.
+9d7964f cmdsk: rename thermal constants to reflect actual event semantics
+c390b0f cmsdk: Create api level 3, cantaloupe.
+
+   * vendor/fusion/
+7ae1e67 VendorCm : Overlay additional dialers
+0086524 vendor_fusion: Bump API level for cmsdk.
+bc1ba95 Update AdAway
+72b7501 vendor: Add prebuilt AdAway (2/2)
+c710da4 Revert "AdBlocker 3/3"
+
+====================
+     09-30-2015
+====================
+
+
+   * art/
+c62ade1 art: Increase the frame-size warning to make gcc 4.9 + intel happy
+891279b art: Fix whitespace errors added by caf
+
+   * frameworks/av/
+f5cbbc1 Fix integer overflow in time conversion
+
+   * frameworks/base/
+47af084 pm: Fix PackageManagerTests for testGetKeySetByAlias.
+7307815 Fixed Possible Resolver Infinite Loop
+78ee9ca PowerManager: change performance profile when disabling battery saver
+7ea057f Squash: Status bar header improvements.
+faaff9a lights: Automatically generate an LED color for notifications
+
+   * packages/apps/Trebuchet/
+af15b41 Trebuchet : Update grid + cancel drag on searchablesChanged
+81275a6 Trebuchet : Update default workspace for cyngn dialer
+cdc6806 Trebuchet : Fix drawer inset & search visibility
+5c3653f Trebuchet: fix NPE when QuickSearchBox is missing
+
+====================
+     09-29-2015
+====================
+
+
+   * external/f2fs-tools/
+6b39b93 mkfs.f2fs: trim using BLKSECDISCARD
+
+   * frameworks/base/
+2cc211c On-the-go : Improve quick settings dialog
+cb502b1 LS: Add option for showing unlock screen directly (1/2) - PS18 FINAL
+90b21e9 Add System Property for Resolver
+99e0e4e Shorten first boot time by filtering dexopted apps by LRU.
+5e62679 base: cache power profiles support
+9b0ac3c Revert "Themes: Don't use themed fonts for non themable packages"
+30e2e65 Greeting: Prevent statusbar icons being shown on the lockscreen.
+
+   * frameworks/native/
+758dcbc Eliminate multiple benign overflow conditions.
+8ce2d84 Eliminate benign overflow condition triggered upon loop termination in Input.cpp
+c99fbde Enable multiple benign overflow conditions.
+c2d9282 Benign unsigned integer overflow in Parcel
+
+   * hardware/qcom/audio-caf/msm8994/
+5ab05b6 hal: Use speakerphone mics for wired headphones
+
+   * packages/apps/Mms/
+082d473 Automatic translation import
+
+   * packages/apps/Settings/
+0a8a0b9 ProfileGroupConfig: Use CMSDK profile manager
+
+   * packages/apps/Trebuchet/
+e4a62ee Trebuchet : Fix insets for panels
+
+   * system/core/
+a06f1d3 fs_mgr: When formating f2fs volumes, respect the length parameter
+b6733a8 init.rc: drop world writable on cgroups to pass cts
+
+====================
+     09-28-2015
+====================
+
+
+   * android/
+1415abc cm: Add repositories for additional Netfilter features
+
+   * bionic/
+0b906e7 Speed-up ARM memcmp by leveraging NEON.
+0d0d274 Simplify _ALIGN_TEXT.
+
+   * frameworks/base/
+62dfb1a StatusBarHeaderExpandedPanel: Fix Wifi and Carrier buttons click actions.
+b66fae7 Tether: add ipa tether stats to the existing design
+598d826 Themes: Don't recreate theme when mTheme is null
+4ddbee9 base: fix dialog neutral button
+51b8150 StrictMode: Disable all strict mode functions when disable prop is set Strict mode can still be used to produce red border flashes even when the disable property is set, among other things.
+f3d82d6 Fingerprint Wakeup: add some error handling; fix race conditions
+6029660 Fingerprint: don't report as active without any fp's
+6b1a7ec Automatic translation import
+ad0893b core: Remove duplicate declaration of AppsFailureReceiver.
+eabde3e SysUI: Fix retrieving of statusbar icon with no theme
+2a4e4d4 Themes: Call recreateTheme when theme changed
+ea71b83 Allow additional permissions to be whitelisted by signature.
+bd40c23 Screen Pinning: Show correct string for on screen nav mPolicy.hasNavigationBar() will always return false because a new PhoneWindowManager was created just for this one method but the new PhoneWindowManager instance does not load the the boolean from resources that define whether the device has on screen navigation bar.  This patch removes the unnecessary instance of a WindowManager and simply loads in the boolean when constructed.
+cc60eb0 Status bar expanded header: Add mobile data type and network activity icons:
+e7f3f90 Status bar expanded header: Update wifi network info:
+bc503e3 Status bar expanded header: Use elevation when expanding/collapsing
+6ae1693 Revert "Fix the layout of the 5 navrings"
+
+   * frameworks/opt/hardware/
+5ff39ca CmHW : Add thermal monitor stub
+
+   * packages/apps/Contacts/
+03ac2ba Contacts: Save contact image from lookup
+6c550be Automatic translation import
+ebe3c30 Contacts: Remove contact shortcut for lookup contact
+deac155 Contacts: Add contact lookup with attribution to quick contacts
+
+   * packages/apps/ContactsCommon/
+5faa89f ContactsCommon: Don't pass contact id in ContactBuilder
+8cc39df Automatic translation import
+c889abd ContactsCommon: Add ability to show looked up contacts for quick contacts
+3b894ce Automatic translation import
+
+   * packages/apps/InCallUI/
+b767306 Replace last incomingCall phoneId for rejectCallWithMessage().
+eb33206 Automatic translation import
+ef60a47 Add call state check for answering or decline an incomingCall.
+166ca2e Fix: Have no incomingCall notification.
+
+   * packages/apps/Settings/
+d03f4f3 ApnSettings : Ensure default apn dialog isn't shown twice
+9ab2530 Settings : Save instance state for app group deletes
+270eb08 Settings : Remove duplicate ProtectedApps definition
+90430ed Settings : Fix blacklist delete number crash
+
+   * packages/apps/Trebuchet/
+76a7d9c Import translations. DO NOT MERGE
+3b6f99d Import translations. DO NOT MERGE
+6f17b35 Fix Android.mk.
+3100d7b Update protobuf library from 2.3 to 2.6.
+357bd88 Move from host-libprotobuf-java-2.3.0-nano to current version
+f77e137 fix build
+a0f1532 Import translations. DO NOT MERGE
+4acad05 Avoid db exception on L and above
+b6564f6 Import translations. DO NOT MERGE
+4aea5e6 Fixing wrong package check when adding shortcuts
+45f5f45 Ensure that FirstFrameAnimatorHelper doesn't set play time when animation is complete
+6238f10 Ignoring specific db exception to workaround Bug. 18554839.
+12170d8 Don't try to create an app state instance during restore.
+b3266e9 Import translations. DO NOT MERGE
+75942b1 Disabling auto addition of managed profile shortcuts
+9638173 Updating default page indicator asset
+918dcfa Fix a couple regressions from resetting AppsCustomizeTabHost
+2fa2db1 Prevent multiple workspace state animators from being started
+28d42e8 Clearing DB before restore starts.
+2bf24b3 Add callback which got missed in refactor
+56f2f81 Import translations. DO NOT MERGE
+76c81b4 Adding a few null checks.   1) During migration, if launcher2 has deleted user data, migration oes not happen   2) If Launcher3 does not has bind widget permission, QSB would be null.
+e05f05d Fixing NullPointer Exception when user is deleted.
+29ad445 Adding shortcuts corresponding to ManagedUsers automatically.
+ad5c6a5 Removing some duplicate methods
+5b54994 Using the default search widget in Launcher3
+4ca61d1 Removing InstallWidgetReceiver related obsolete code.
+a5d798f Updating page indicator assets
+ea0d7a7 Clearing some android list errors/warnings.
+6805e05 Overlay shouldn't show up above Intro screen
+0b5f4e2 Adding a couple memory optimizations to Launcher
+7dfa473 Moving methods which update internal sets on a separate thread
+8c381f0 Failing restore, if we have an item outside screen bounds
+b1c299b Fixing insets of launcher clings
+5b2b779 Make sure DragLayer layout params are of the correct type
+8d43f06 Updating backup restore logic
+78e301e Loading internal default layout if partner layout fails to load
+cd9a2d8 Import translations. DO NOT MERGE
+42bdeee Fix edge case where LauncherOverlay scroll woudln't be reset
+bb2619a Add InsettableFrameLayout layout params to easily ignore insets
+a853e39 Tweaking close AllApps / Widgets on KK and below
+1517149 Was seeing some duplicated icons in the migration flow
+bf18c37 Allow LauncherOverlay to access and manage insets
+e8e3e71 Disabling restore for below L devices
+6cc6efb Some resource fixes for drop target
+e95e818 Removing landscape string overrides
+fba09de Refactoring LauncherBackupHelper.java
+3eb0635 First pass of the Launcher Overlay interface / impl
+e44e715 Import translations. DO NOT MERGE
+fd9e76f Removing AccessibleTabView and some other dead code.
+dae5ef8 Import translations. DO NOT MERGE
+d007514 Refactoring layout parsing code
+da9ade7 Removing all traces of Market button and TabIndicator
+a4a62d4 Adding ability to list folder items in separate file
+869da3e Fixing some IconCache methods not  thread safe
+60d6078 Deleting workspace items from db which have an invalid placement
+dc81d70 Not opening all apps again when AppInfo or Uninstall is selected
+4e4f8a7 Showing widgets in a disabled state, when running in safe mode
+19379be Add more Launcher files to delete on Clear Launcher Data
+3637cce Updating ItemInfo objects in the worker thread
+b5f2e0a Removing some dead code
+bedfa5e Keeping icons in disabled state when SD-card is unmounted
+6d5f975 Revert "Show apps as unavailable when on unmounted storage"
+7d02088 Using DeviceDefault theme for Launcher and WallpaperPicker
+af0d948 Updating the wallpaperpicker thumb selection feedback
+88699b6 Updating icons for sortcuts when the target app updates.
+19b63da Cleaning up icon resizing code
+a8f7b6a Create a central list of files the Launcher writes to the app directory
+0e6e432 Use LauncherCallbacks model instead of method overrides
+8167115 Import translations. DO NOT MERGE
+6cc089e Adding NPE check in InstallShortcutReceiver
+89f3bb8 Moving the focus indicator instantly to the target position, instead of begining the next animation from the middle.
+
+   * packages/inputmethods/LatinIME/
+84dd73a Catch IllegalStateException
+bff6327 Automatic translation import
+de6ad7f Fix compile error in backwards file
+4e64e6c Fix Thai numeric row button widths
+cd314ad Fixing layouts and adding 5th row to QWERTZ.
+a01171d Add 5th number row to keyboard.
+9e9db83 Automatic translation import
+
+   * packages/services/Telephony/
+6380acf Automatic translation import
+9b01b78 Telephony: Create work around on modem vt change during emergency redial.
+748c5e1 Move & improve Wi-Fi call settings strings
+
+   * system/core/
+a6ec752 sysutils: Hush logging
+8a03c65 Don't use global variable in libnetutils.
+df1ec3b IPA tether: support for netlink event from ipa
+
+   * vendor/cmsdk/
+9da1b14 Remove CyanogenMod navigation bar.
+8ac3984 Add way to migrate CM specific settings to CMSettingsProvider
+2760094 cmsdk: Add classpathtests.
+c1e5c03 CmSdk : Update api text for thermal monitor
+5b5ce71 CMSdk : Initial thermal state to STATE_UNKNOWN
+76fd35f Automatic translation import
+7072cb0 CMSdk : Add thermal monitor service impl
+c29e39e CMSdk : Add ThermalMonitor
+694abd4 CMSettingsProvider: Remove attempts at closing sqlite db
+
+   * vendor/fusion/
+1ccb77d Update HK APNs
+9ad00e4 apns: combine internet and mms apns for vzw
+856c703 sepolicy: Allow system app to set boot anim property
+a4d4871 APN: add Sprint MVNO Ringplus, Ting update
