@@ -1,0 +1,331 @@
+====================
+     10-03-2015
+====================
+
+
+   * build/
+c1ee2b8 build: Make sure we're building our secondary resource package as dependency.
+29312b7 build: Separate commands in recovery foreach loops
+b5b9643 img_from_target_files: Skip oem.img in fastboot image creation
+
+   * device/samsung/jf-common/
+990da76 jf: cleanup and force 'performance' profile early
+aac6d86 jf: dont increase read ahead size
+84aa31f sepolicy: remove duplicate livedisplay entry
+c6e9988 jf: set io scheduler using sys.io.scheduler prop
+5683e37 jflteRIL: remove remaining code from lollipop hack
+50b5889 jflteRIL: kang some stuff from hlte
+266bc98 jf: don't let ril set signal strength type.
+47e61e3 jf: Camera: dont advertise HDR on rear cam
+2b576e9 Revert "jf: camera: dont advertise HDR"
+8fcd465 Revert "jf: update audio_policy.conf to LA.AF.1.1_rb1.18"
+9a05392 jf: update media codecs to LA.AF.1.1_rb1.18
+89f9cf3 jf: update audio_policy.conf to LA.AF.1.1_rb1.18
+4dbdda9 jf: camera: enable zsl on ffc
+ba4b547 jf: fstab: cosmetic cleanup
+4496b92 jf: camera: dont advertise HDR
+7b70654 jf: move and update power management
+
+   * device/samsung/jflteatt/
+0839ea8 jflteatt: overlay all valid network types
+884c0f1 jflteatt: update fingerprint to 5.0.1
+be4ce27 jflteatt: remove camera blobs, they're in common
+97fbeb3 releasetools: run loki.sh from install/bin/ during install
+504509c Add vendor
+
+   * device/samsung/jfltespr/
+a1f53be Add vendor
+
+   * device/samsung/jflteusc/
+5f39ca8 Add vendor
+
+   * device/samsung/jfltevzw/
+665b665 jfltevzw: remove hard-coded operator numerics
+9588266 jfltevzw: update fingerprint
+101035e jfltevzw: remove camera blobs, they're in common
+cded434 releasetools: run loki.sh from install/bin/ during install
+4195b21 Add vendor
+
+   * device/samsung/jfltexx/
+c17e103 jfltexx: remove unused vendorsetup.sh
+c4c515e jfltexx: update fingerprint to LRX22C
+d341822 jfltexx: Add execution permissions to extract-files.sh
+1a21919 Add vendor
+
+   * frameworks/base/
+7cd1d2e Fix FileManager Interaction
+
+   * kernel/samsung/jf/
+35efd52 jf: remove exfat
+84fa64e Revert "msm: mdp: Scotty, moar power!"
+092249c jf: iosched musical chairs
+be12dc2 block, bfq: add Early Queue Merge (EQM) to BFQ-v7r8 for 3.4.0
+e0f56d2 block: introduce the BFQ-v7r8 I/O sched for 3.4
+72916a8 block: cgroups, kconfig, build bits for BFQ-v7r8-3.4
+ef8d8bd sysrq: Emergency Remount R/O in reverse order
+3a17942 msm: mdp: Scotty, moar power!
+0dfa29b jf: defconfig: disable ksm
+9a97521 jf: dont null out sd->v4l2_dev anymore
+701d665 jf: regen defconfig
+1236fca jf: fix restart from charging mode?
+787f5b7 jf: f2fs: bring up to date with Jaegeuk's branch
+
+   * packages/apps/AudioFX/
+b65b58e Automatic translation import
+
+   * packages/apps/ContactsCommon/
+ca0f171 ContactsCommon: Move contact uri extra to common location
+
+   * packages/apps/Settings/
+1921bb7 Increase max. fingerprint name length.
+1501283 ProfileSettings : Ensure brightness settings only apply on accept
+50ba427 APN: Clean up mvno filtering of apn list
+21ca322 Settings : Filter settings for secondary users
+ac99262 Settings : Don't show ringtone pref for non voice capable devices
+e6c0e55 Settings : Fix profile action offset when changing orientation
+b1a2f05 Fingerprint: Clear error when enrollment finished
+
+   * packages/apps/Trebuchet/
+681ac55 Automatic translation import
+
+   * packages/apps/TvSettings/
+06c7e91 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+a41d75d Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+c911ca0 Automatic translation import
+
+   * vendor/fusion/
+e7e528e Fix merge derp
+b96d2c9 Vendor: Add G4 H815 device to lunch menu.
+3ad9357 Add libcore.net.MimeUtils Overrides
+d5c3ed1 sepolicy: allow vold to trim persist
+
+====================
+     10-02-2015
+====================
+
+
+   * device/samsung/jflteatt/
+7470fe5 Fix remote
+
+   * device/samsung/jfltespr/
+e2ce4c0 Fix remote
+
+   * device/samsung/jflteusc/
+ec7dd0e Fix remote
+
+   * device/samsung/jfltevzw/
+5c685fc Fix remote
+
+   * device/samsung/jfltexx/
+9ef54f8 Fix remote
+
+   * frameworks/av/
+f963b5d libstagefright : fix the bug of wrong value setting for slice-height
+
+   * frameworks/base/
+bc95272 services: core: server: NetworkManagementService: Mute getNetworkStatsSummary logs
+6983f50 Revert "AdBlocker 2/3"
+db75e5f NVIDIA Shield Controller support [2/2]
+fafa454 framework: add "Turn wifi off" string
+5c29116 Battery: Add fast charging UI support [3/3]
+
+   * frameworks/native/
+d9b3cdb Native: Add fast charging UI support [1/3]
+
+   * frameworks/opt/net/wifi/
+cedb8fc NVIDIA Shield Controller support [1/2]
+f2343db wifi: Allow building without Wifi HAL
+e579c9f Wifi: add "turn wifi off" action to open network notification
+
+   * packages/apps/Dialer/
+aabcf37 Specify different colors for answered incoming call and outgoing call icons.
+d97e934 Automatic translation import
+1e6a127 Call recording encoder/format choice 1/3
+79e3c8f Revert "Call recording encoder/format choice 1/3"
+
+   * packages/apps/Settings/
+a0d51fe Fix QSPanel/Bar settings logic.
+09a8566 Settings: Add prebuilt AdAway (1/2)
+f07ad3a Revert "AdBlocker 1/3"
+
+   * packages/apps/Trebuchet/
+14a18d5 trebuchet: protect against npe
+9d8ee9e fix NPE when dragging icon to desktop, when QuickSearchBox is missing
+b1f28ea Trebuchet: Use hardware layer for fading app drawer
+
+   * packages/providers/ThemesProvider/
+3a599d2 Use correct DialtactsActivity for DialerNext
+
+   * packages/services/Telecomm/
+33af938 Telecomm : Allow multiple default dialers
+
+   * packages/services/Telephony/
+3adf163 Telephony : Allow multiple default dialers
+128f1e4 Call recording encoder/format choice 2/3
+ed09b00 Revert "Call recording encoder/format choice 2/3"
+
+   * prebuilts/cmsdk/
+090c6d2 cmsdk: Update current for API level 2 release.
+11ccd84 cmsdk: Update api text for api level 2 and permissions for it.
+
+   * system/core/
+b608439 fastboot: format f2fs partition instead of just erase
+f258a5c Added proper support to NVIDIA Shield Tablet Console Mode
+0eefb41 healthd: Add fast charging UI support [2/3]
+
+   * vendor/cmsdk/
+4fd7cf5 cmsdk: Update API text for constants changes.
+9d7964f cmdsk: rename thermal constants to reflect actual event semantics
+c390b0f cmsdk: Create api level 3, cantaloupe.
+
+   * vendor/fusion/
+7ae1e67 VendorCm : Overlay additional dialers
+0086524 vendor_fusion: Bump API level for cmsdk.
+bc1ba95 Update AdAway
+72b7501 vendor: Add prebuilt AdAway (2/2)
+c710da4 Revert "AdBlocker 3/3"
+
+====================
+     10-01-2015
+====================
+
+
+   * device/moto/shamu/
+2c44ff5 shamu: Define TARGET_VENDOR
+
+   * frameworks/av/
+f5cbbc1 Fix integer overflow in time conversion
+
+   * frameworks/base/
+e2f487c Header camera button 1/2
+834f41d LEDs Brightness [2/2]: Lights notifications brightness support
+c478fe4 Revert "Illumination Bar [3/3]: Multiple LEDs and brightness support"
+
+   * hardware/libhardware/
+17a2514 Revert "Illumination Bar [1/3]: Multiple LEDs and brightness support"
+
+   * packages/apps/Settings/
+260c818 Header camera button 2/2
+9872b23 Settings: Always enable the per-app pulse light settings
+fbd54b2 LEDs Brightness [1/2]: Lights notifications brightness support
+8ee186b Revert "Illumination Bar [2/3]: Multiple LEDs and brightness support"
+
+   * packages/apps/SoundRecorder/
+9973e42 SoundRecorder: only primary storage volumes are writeable
+
+   * packages/apps/Trebuchet/
+b5f1c45 Trebuchet : Ensure search bar doesn't show in hidden
+1f9ba38 App Drawer: fix insets on paddingTop
+af15b41 Trebuchet : Update grid + cancel drag on searchablesChanged
+
+====================
+     09-30-2015
+====================
+
+
+   * art/
+c62ade1 art: Increase the frame-size warning to make gcc 4.9 + intel happy
+891279b art: Fix whitespace errors added by caf
+
+   * frameworks/base/
+47af084 pm: Fix PackageManagerTests for testGetKeySetByAlias.
+7307815 Fixed Possible Resolver Infinite Loop
+78ee9ca PowerManager: change performance profile when disabling battery saver
+7ea057f Squash: Status bar header improvements.
+faaff9a lights: Automatically generate an LED color for notifications
+2cc211c On-the-go : Improve quick settings dialog
+cb502b1 LS: Add option for showing unlock screen directly (1/2) - PS18 FINAL
+90b21e9 Add System Property for Resolver
+99e0e4e Shorten first boot time by filtering dexopted apps by LRU.
+5e62679 base: cache power profiles support
+9b0ac3c Revert "Themes: Don't use themed fonts for non themable packages"
+30e2e65 Greeting: Prevent statusbar icons being shown on the lockscreen.
+
+   * frameworks/native/
+758dcbc Eliminate multiple benign overflow conditions.
+8ce2d84 Eliminate benign overflow condition triggered upon loop termination in Input.cpp
+c99fbde Enable multiple benign overflow conditions.
+c2d9282 Benign unsigned integer overflow in Parcel
+
+   * packages/apps/Mms/
+082d473 Automatic translation import
+
+   * packages/apps/Settings/
+0a8a0b9 ProfileGroupConfig: Use CMSDK profile manager
+
+   * packages/apps/Trebuchet/
+81275a6 Trebuchet : Update default workspace for cyngn dialer
+cdc6806 Trebuchet : Fix drawer inset & search visibility
+5c3653f Trebuchet: fix NPE when QuickSearchBox is missing
+e4a62ee Trebuchet : Fix insets for panels
+
+   * system/core/
+a06f1d3 fs_mgr: When formating f2fs volumes, respect the length parameter
+b6733a8 init.rc: drop world writable on cgroups to pass cts
+
+====================
+     09-29-2015
+====================
+
+
+   * android/
+8dd139f cm: Add repositories for additional Netfilter features
+
+   * bionic/
+0b906e7 Speed-up ARM memcmp by leveraging NEON.
+0d0d274 Simplify _ALIGN_TEXT.
+
+   * external/f2fs-tools/
+6b39b93 mkfs.f2fs: trim using BLKSECDISCARD
+
+   * frameworks/base/
+62dfb1a StatusBarHeaderExpandedPanel: Fix Wifi and Carrier buttons click actions.
+b66fae7 Tether: add ipa tether stats to the existing design
+598d826 Themes: Don't recreate theme when mTheme is null
+4ddbee9 base: fix dialog neutral button
+51b8150 StrictMode: Disable all strict mode functions when disable prop is set Strict mode can still be used to produce red border flashes even when the disable property is set, among other things.
+f3d82d6 Fingerprint Wakeup: add some error handling; fix race conditions
+6029660 Fingerprint: don't report as active without any fp's
+6b1a7ec Automatic translation import
+ad0893b core: Remove duplicate declaration of AppsFailureReceiver.
+eabde3e SysUI: Fix retrieving of statusbar icon with no theme
+2a4e4d4 Themes: Call recreateTheme when theme changed
+ea71b83 Allow additional permissions to be whitelisted by signature.
+bd40c23 Screen Pinning: Show correct string for on screen nav mPolicy.hasNavigationBar() will always return false because a new PhoneWindowManager was created just for this one method but the new PhoneWindowManager instance does not load the the boolean from resources that define whether the device has on screen navigation bar.  This patch removes the unnecessary instance of a WindowManager and simply loads in the boolean when constructed.
+cc60eb0 Status bar expanded header: Add mobile data type and network activity icons:
+e7f3f90 Status bar expanded header: Update wifi network info:
+bc503e3 Status bar expanded header: Use elevation when expanding/collapsing
+6ae1693 Revert "Fix the layout of the 5 navrings"
+
+   * frameworks/opt/hardware/
+5ff39ca CmHW : Add thermal monitor stub
+
+   * hardware/qcom/audio-caf/msm8994/
+5ab05b6 hal: Use speakerphone mics for wired headphones
+
+   * packages/apps/Contacts/
+03ac2ba Contacts: Save contact image from lookup
+6c550be Automatic translation import
+ebe3c30 Contacts: Remove contact shortcut for lookup contact
+deac155 Contacts: Add contact lookup with attribution to quick contacts
+
+   * packages/apps/ContactsCommon/
+5faa89f ContactsCommon: Don't pass contact id in ContactBuilder
+8cc39df Automatic translation import
+c889abd ContactsCommon: Add ability to show looked up contacts for quick contacts
+3b894ce Automatic translation import
+
+   * packages/apps/InCallUI/
+b767306 Replace last incomingCall phoneId for rejectCallWithMessage().
+eb33206 Automatic translation import
+ef60a47 Add call state check for answering or decline an incomingCall.
+166ca2e Fix: Have no incomingCall notification.
+
+   * packages/apps/Settings/
+d03f4f3 ApnSettings : Ensure default apn dialog isn't shown twice
+9ab2530 Settings : Save instance state for app group deletes
+270eb08 Settings : R
