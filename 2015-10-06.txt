@@ -1,0 +1,286 @@
+====================
+     10-06-2015
+====================
+
+
+   * build/
+319157a Merge pull request #2 from msifland/lp5.1
+db19993 Add option for NDK version customization
+
+   * device/lge/g3-common/
+e97fc68 Add NDK version
+
+   * device/samsung/ks01lte/
+fee99e5 Add NDK version
+300732d Update fusionsp.dependencies
+140d4f7 Merge pull request #1 from CyanogenMod/cm-12.1
+
+   * packages/apps/Trebuchet/
+b69f0ee Update default workspace
+
+====================
+     10-05-2015
+====================
+
+
+   * cts/
+d80b181 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/flac/
+2d7da25 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/libvpx/
+0b30efb Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/sonivox/
+14291d9 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * external/sqlite/
+2fe97d9 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * hardware/qcom/audio-caf/msm8994/
+8660f35 hal: Use front mic when in headphone voice call
+1cad787 Revert "hal: Use speakerphone mics for wired headphones"
+
+   * packages/apps/Bluetooth/
+6317083 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+   * system/security/
+ec1e3a9 Merge tag 'android-5.1.1_r23' into cm-12.1
+
+====================
+     10-04-2015
+====================
+
+
+====================
+     10-03-2015
+====================
+
+
+   * bionic/
+534b123 Merge pull request #1 from ujwalp15/lp5.1
+89a0adc Create memchr.S
+26bcc68 Fix build
+
+====================
+     10-02-2015
+====================
+
+
+   * build/
+c1ee2b8 build: Make sure we're building our secondary resource package as dependency.
+29312b7 build: Separate commands in recovery foreach loops
+b5b9643 img_from_target_files: Skip oem.img in fastboot image creation
+
+   * frameworks/base/
+7cd1d2e Fix FileManager Interaction
+
+   * kernel/lge/g3/
+91c65f0 Version 18
+6c062ea msm: mdss: kcal: Only apply updates on index 0
+f8dddf9 msm: mdss: kcal: Use PCC for negative display mode
+ab1d7b3 arm/dts: lge: Enable bam_dmux fast shutdown
+f0fe02a soc: qcom: bam_dmux: Add fast-shutdown flag
+3b52391 lowmemorykiller: avoid false adaptive LMK triggers
+62de37c cpufreq: governors: purge unholy junk
+c4d1746 cpufreq: interactive: set target load to 80
+7cb55a1 cpufreq: interactive: Do not reschedule timer if policy->max changes
+7522b4e cpufreq: interactive: don't skip waking up speedchange_task if target_freq > policy->cur
+b33d054 cpufreq: interactive: prevents the frequency to directly raise above the hispeed_freq from a lower frequency.
+c439599 cpufreq: interactive: call __cpufreq_driver_target() for cur frequency
+9b01263 cpufreq: interactive: Replace strict_strtoul with kstrtoul
+0d68a9e cpufreq: interactive: Reschedule timer if min_freq is reduced
+ae82d3d cpufreq: interactive: calculate load before freq change
+be06b06 cpufreq: interactive: Rearm governor timer at max freq
+ea6e6de cpufreq: interactive: Replace obsolete strict_strtoul calls.
+b476191 cpufreq: interactive: free above_hispeed_delay on exit
+7736a08 cpufreq: interactive: validate above_hispeed_delay
+316295c msm_hotplug: removed hp_io_is_busy parameter!
+9326918 alucard_hotplug: little optimization!
+a59a636 Alucard HotPlug: remove io_is_busy.
+e5b1f4a Snapdragon temp reading:
+75b5e66 Profiles/Hotplugging:
+d209578 cpufreq: Protect against hotplug in cpufreq_register_driver()
+1d0a685 makefile: added new -g0, -fivopts, -fno-inline-function optimizations
+f0d15f0 g3: regen defconfigs
+f02ce82 Linux 3.4.109
+5539e80 sched: Queue RT tasks to head when prio drops
+66606f4 pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+8f82e39 NET: ROSE: Don't dereference NULL neighbour pointer.
+c7e8aaf block: fix ext_dev_lock lockdep report
+c9f2c60 bridge: superfluous skb->nfct check in br_nf_dev_queue_xmit
+0f8e7c9 net: socket: Fix the wrong returns for recvmsg and sendmsg
+b348d4e ipmi: fix timeout calculation when bmc is disconnected
+a8b3aff x86, kvm: fix kvm's usage of kernel_fpu_begin/end()
+c986b0b x86, kvm: use kernel_fpu_begin/end() in kvm_load/put_guest_fpu()
+057a2a7 md: use kzalloc() when bitmap is disabled
+032e2d2 udf: Check length of extended attributes and allocation descriptors
+0a04d68 tracing: Have filter check for balanced ops
+eaac1ee ring-buffer-benchmark: Fix the wrong sched_priority of producer
+57fe1f0 bridge: fix multicast router rlist endless loop
+6727920 bridge: disable softirqs around br_fdb_update to avoid lockup
+9f3d2a9 bridge: use _bh spinlock variant for br_fdb_update to avoid lockup
+635f9da MIPS: Fix enabling of DEBUG_STACKOVERFLOW
+de8231c USB: cp210x: add ID for HubZ dual ZigBee and Z-Wave dongle
+50aab10 ALSA: usb-audio: add MAYA44 USB+ mixer control names
+10894ae ALSA: hda/realtek - Add a fixup for another Acer Aspire 9420
+bf381a5 Input: elantech - fix detection of touchpads where the revision matches a known rate
+01f6ec6 drm/i915: Don't skip request retirement if the active list is empty
+b5bb154 ozwpan: unchecked signed subtraction leads to DoS
+99b9a97 ozwpan: divide-by-zero leading to panic
+62329ac ozwpan: Use proper check to prevent heap overflow
+149e56c USB: serial: ftdi_sio: Add support for a Motion Tracker Development Board
+a917089 target/pscsi: Don't leak scsi_host if hba is VIRTUAL_HOST
+136e81e d_walk() might skip too much
+c43b35e fs, omfs: add NULL terminator in the end up the token list
+ce5e7e0 lguest: fix out-by-one error in address checking.
+2de3125 x86: bpf_jit: fix compilation of large bpf programs
+52a9ee21 x86/mce: Fix MCE severity messages
+86d7471 ARM: dts: imx27: only map 4 Kbyte for fec registers
+004abc4 bridge: fix parsing of MLDv2 reports
+3443564 crypto: s390/ghash - Fix incorrect ghash icv buffer handling.
+4aa4a00 xen/events: don't bind non-percpu VIRQs with percpu chip
+d1397d8 sd: Disable support for 256 byte/sector disks
+c8d69f4 mmc: atmel-mci: fix bad variable type for clkdiv
+0f3566b ALSA: hda - Add Conexant codecs CX20721, CX20722, CX20723 and CX20724
+58817ea powerpc: Align TOC to 256 bytes
+1d1f914 Input: elantech - fix semi-mt protocol for v3 HW
+442b37d ASoC: wm8994: correct BCLK DIV 348 to 384
+f8e3181 ASoC: wm8960: fix "RINPUT3" audio route error
+675d110 KVM: MMU: fix CR4.SMEP=1, CR0.WP=0 with shadow pages
+19fdeb6 mac80211: move WEP tailroom size check
+0d3be35 ipvs: fix memory leak in ip_vs_ctl.c
+8ef5fc3 ext4: check for zero length extent explicitly
+ccccfb5 drm/radeon: fix VM_CONTEXT*_PAGE_TABLE_END_ADDR handling
+e50935e ARM: net: delegate filter to kernel interpreter when imm_offset() return value can't fit into 12bits.
+2ae7d90 ahci: avoton port-disable reset-quirk
+0b4dfce ahci: un-staticize ahci_dev_classify
+96ab873 usb-storage: Add NO_WP_DETECT quirk for Lacie 059f:0651 devices
+4f28c28 xhci: gracefully handle xhci_irq dead device
+4ca52c8 xhci: Solve full event ring by increasing TRBS_PER_SEGMENT to 256
+7845883 xhci: fix isoc endpoint dequeue from advancing too far on transaction error
+5c3e180 md/raid5: don't record new size if resize_stripes fails.
+46e810b nfsd: fix the check for confirmed openowner in nfs4_preprocess_stateid_op
+5fa019a USB: visor: Match I330 phone more precisely
+555ff60 USB: pl2303: Remove support for Samsung I330
+99d9b7a USB: cp210x: add ID for KCF Technologies PRN device
+39c0686 rtlwifi: rtl8192cu: Fix kernel deadlock
+981c439 libata: Ignore spurious PHY event on LPM policy change
+2f172bd libata: Add helper to determine when PHY events should be ignored
+323a590 ocfs2: dlm: fix race between purge and get lock resource
+043ec26 nilfs2: fix sanity check of btree level in nilfs_btree_root_broken()
+ecd70ac mm/memory-failure: call shake_page() when error hits thp tail page
+13a8130 xen/events: Set irq_info->evtchn before binding the channel to CPU in __startup_pirq()
+59cef06 xen/console: Update console event channel on resume
+8541047 RDMA/CMA: Canonize IPv4 on IPV6 sockets properly
+27bde39 mmc: core: add missing pm event in mmc_pm_notify to fix hib restore
+960f9b6 ARM: pxa: lubbock: use new pxa_cplds driver
+c78e464 ARM: pxa: mainstone: use new pxa_cplds driver
+c175bad ARM: pxa: pxa_cplds: add lubbock and mainstone IO
+15ccd78 ext4: move check under lock scope to close a race.
+6f7840a powerpc/pseries: Correct cpu affinity for dlpar added cpus
+bc661f6 ALSA: emu10k1: Emu10k2 32 bit DMA mode
+4023f05 ALSA: emux: Fix mutex deadlock in OSS emulation
+0b3a1ef serial: of-serial: Remove device_type = "serial" registration
+6374683 serial: xilinx: Use platform_get_irq to get irq description structure
+19aed2a 3w-9xxx: fix command completion race
+83ee651 3w-xxxx: fix command completion race
+eff384f 3w-sas: fix command completion race
+79833c0 SCSI: add 1024 max sectors black list flag
+da806c7 drm/radeon: Use drm_calloc_ab for CS relocs
+b6c1442 ALSA: emux: Fix mutex deadlock at unloading
+7dd9ccb ALSA: emu10k1: Fix card shortname string buffer overflow
+126658d ALSA: hda - Fix mute-LED fixed mode
+3f831d7 RCU pathwalk breakage when running into a symlink overmounting something
+972a425 nfs: fix high load average due to callback thread sleeping
+a3ec2cb nfs: don't call blocking operations while !TASK_RUNNING
+e4d9e2a nfsd: fix nsfd startup race triggering BUG_ON
+9afc8d8 memstick: mspro_block: add missing curly braces
+b4a2091 ptrace: fix race between ptrace_resume() and wait_task_stopped()
+8898141 firmware/ihex2fw.c: restore missing default in switch statement
+48492da megaraid_sas: use raw_smp_processor_id()
+2fdccdc IB/mlx4: Fix WQE LSO segment calculation
+e55d68e IB/core: disallow registering 0-sized memory region
+01a7ee2 dm crypt: fix deadlock when async crypto algorithm returns -EBUSY
+3ffd561 fs/binfmt_elf.c: fix bug in loading of PIE binaries
+e1ccf7c ACPICA: Utilities: split IO address types from data type models.
+bd55b5e powerpc/perf: Cap 64bit userspace backtraces to PERF_MAX_STACK_DEPTH
+aad9c87 Btrfs: fix inode eviction infinite loop after cloning into it
+6d84dbf s390/hibernate: fix save and restore of kernel text section
+7f24df8 selinux/nlmsg: add XFRM_MSG_MAPPING
+77f5dd8 selinux/nlmsg: add XFRM_MSG_MIGRATE
+963b603 selinux/nlmsg: add XFRM_MSG_REPORT
+f41ffbf powerpc: Fix missing L2 cache size in /sys/devices/system/cpu
+5b199c4 MIPS: Hibernate: flush TLB entries earlier
+7e2cccb ALSA: emu10k1: don't deadlock in proc-functions
+3dc8762 scsi: storvsc: Fix a bug in copy_from_bounce_buffer()
+80962c5 x86/iommu: Fix header comments regarding standard and _FINISH macros
+25477d2 selinux/nlmsg: add XFRM_MSG_[NEW|GET]SADINFO
+411d9e3 selinux/nlmsg: add XFRM_MSG_GETSPDINFO
+6e96874 RDS: Documentation: Document AF_RDS, PF_RDS and SOL_RDS correctly.
+4b1c72d Input: elantech - fix absolute mode setting on some ASUS laptops
+795bda0 jhash: Update jhash_[321]words functions to use correct initval
+8ab1550 ext4: make fsync to sync parent dir in no-journal for real this time
+18d9244 ASoC: cs4271: Increase delay time after reset
+b770d27 rtlwifi: rtl8192cu: Add new USB ID
+d68809b ARM: 8320/1: fix integer overflow in ELF_ET_DYN_BASE
+f7a1040 btrfs: don't accept bare namespace as a valid xattr
+913249f Btrfs: fix log tree corruption when fs mounted with -o discard
+52ba433 Drivers: hv: vmbus: Don't wait after requesting offers
+bdb3c1a C6x: time: Ensure consistency in __init
+393bc85 UBI: fix check for "too many bytes"
+bf9e87d UBI: initialize LEB number variable
+b06ac3b UBI: fix out of bounds write
+5da087b staging: panel: fix lcd type
+864b2fb cdc-wdm: fix endianness bug in debug statements
+381fa0f ASoC: wm8741: Fix rates constraints values
+8e6e3ef usb: common: otg-fsm: only signal connect after switching to peripheral
+6f8166e drm/radeon: fix doublescan modes (v2)
+7c4593b pinctrl: fix example .get_group_pins implementation signature
+c65fbf1 pinctrl: remove doc mention of the enable/disable API
+08386d5 compal-laptop: Check return value of power_supply_register
+585bc08 pinctrl: remove maxpin from documentation
+8594a1a usb: musb: core: fix TX/RX endpoint order
+49c6100 KVM: s390: Zero out current VMDB of STSI before including level3 data.
+1db4ffd e1000: add dummy allocator to fix race condition between mtu change and netpoll
+a3551d5 Drivers: hv: vmbus: Fix a bug in the error path in vmbus_open()
+71f4b3a Bluetooth: ath3k: Add support Atheros AR5B195 combo Mini PCIe card
+0ec24ad ipv6: add check for blackhole or prohibited entry in rt6_redire
+
+   * packages/apps/AudioFX/
+b65b58e Automatic translation import
+
+   * packages/apps/ContactsCommon/
+ca0f171 ContactsCommon: Move contact uri extra to common location
+
+   * packages/apps/Settings/
+1921bb7 Increase max. fingerprint name length.
+1501283 ProfileSettings : Ensure brightness settings only apply on accept
+50ba427 APN: Clean up mvno filtering of apn list
+21ca322 Settings : Filter settings for secondary users
+ac99262 Settings : Don't show ringtone pref for non voice capable devices
+e6c0e55 Settings : Fix profile action offset when changing orientation
+b1a2f05 Fingerprint: Clear error when enrollment finished
+
+   * packages/apps/Trebuchet/
+681ac55 Automatic translation import
+
+   * packages/apps/TvSettings/
+06c7e91 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+a41d75d Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+c911ca0 Automatic translation import
+
+   * vendor/fusion/
+e7e528e Fix merge derp
+b96d2c9 Vendor: Add G4 H815 device to lunch menu.
+3ad9357 Add libcore.net.MimeUtils Overrides
+d5c3ed1 sepolicy: allow vold to trim persist
+
+   * vendor/lge/
+7500deb Add G4 device.
+
