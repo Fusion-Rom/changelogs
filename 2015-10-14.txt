@@ -1,0 +1,41 @@
+====================
+     10-14-2015
+====================
+
+
+====================
+     10-13-2015
+====================
+
+
+   * frameworks/base/
+12f966f Add live lock screen previews [1/2]
+
+====================
+     10-12-2015
+====================
+
+
+   * device/motorola/osprey/
+2b1a7e9 Revert "osprey: Disable kernel modules"
+a8752a7 Update BoardConfig.mk
+5b5be3d Make it a Fusion device
+
+====================
+     10-11-2015
+====================
+
+
+====================
+     10-10-2015
+====================
+
+
+   * packages/apps/CMWallpapers/
+3e1a80e CMWallpapers : Hide default wallpaper
+
+   * packages/apps/Trebuchet/
+486bcb3 Trebuchet: make workspace layout configurable by prebundled mcc
+
+   * vendor/oneplus/
+7aa76ab bacon: update sensor_def
